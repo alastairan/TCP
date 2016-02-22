@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://training.gov.au/services/3/" elementFormDefault="qualified" targetNamespace="http://training.gov.au/services/3/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://ws.sandbox.training.gov.au/Deewr.Tga.WebServices/TrainingComponentServiceV3.svc?xsd=xsd3" namespace="http://training.gov.au/services/" />
+  <xs:import schemaLocation="https://ws.sandbox.training.gov.au/Deewr.Tga.WebServices/TrainingComponentServiceV3.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Deewr.Tga.Model" />
+  <xs:import schemaLocation="https://ws.sandbox.training.gov.au/Deewr.Tga.WebServices/TrainingComponentServiceV3.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:import schemaLocation="https://ws.sandbox.training.gov.au/Deewr.Tga.WebServices/TrainingComponentServiceV3.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="TrainingComponent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Attachments" nillable="true" type="tns:ArrayOfTrainingComponentAttachment">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Classifications" nillable="true" type="tns:ArrayOfClassification">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CompletionMapping" nillable="true" type="tns:ArrayOfNrtCompletion">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q1="http://training.gov.au/services/" minOccurs="0" name="ComponentType" type="q1:TrainingComponentTypes" />
+      <xs:element minOccurs="0" name="Contacts" nillable="true" type="tns:ArrayOfContact">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Deewr.Tga.Model" minOccurs="0" name="CopyrightType" nillable="true" type="q2:CopyrightType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" type="q3:DateTimeOffset">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CurrencyPeriods" nillable="true" type="tns:ArrayOfNrtCurrencyPeriod">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CurrencyStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataManagers" nillable="true" type="tns:ArrayOfDataManagerAssignment">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="IndustrySectors" nillable="true" type="tns:ArrayOfTrainingComponentIndustrySector">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="IsConfidential" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="IsLegacyData" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsStreamlined" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IscOrganisationCode" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="MappingInformation" nillable="true" type="tns:ArrayOfMapping">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Occupations" nillable="true" type="tns:ArrayOfTrainingComponentOccupation">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ParentCode" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ParentTitle" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="RecognitionManagers" nillable="true" type="tns:ArrayOfRecognitionManagerAssignment">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Releases" nillable="true" type="tns:ArrayOfRelease">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Restrictions" nillable="true" type="tns:ArrayOfNrtRestriction">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ReverseMappingInformation" nillable="true" type="tns:ArrayOfMapping">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="UpdatedDate" type="q4:DateTimeOffset">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Uploadings" nillable="true" type="tns:UploadAttachmentRequest">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="UsageRecommendations" nillable="true" type="tns:ArrayOfUsageRecommendation">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingComponent" nillable="true" type="tns:TrainingComponent" />
+  <xs:complexType name="ArrayOfTrainingComponentAttachment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrainingComponentAttachment" nillable="true" type="tns:TrainingComponentAttachment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrainingComponentAttachment" nillable="true" type="tns:ArrayOfTrainingComponentAttachment" />
+  <xs:complexType name="TrainingComponentAttachment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FileSize" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileUrl" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingComponentAttachment" nillable="true" type="tns:TrainingComponentAttachment" />
+  <xs:complexType name="ArrayOfClassification">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Classification" nillable="true" type="tns:Classification" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClassification" nillable="true" type="tns:ArrayOfClassification" />
+  <xs:complexType name="Classification">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractDto">
+        <xs:sequence>
+          <xs:element name="PurposeCode" nillable="true" type="xs:string" />
+          <xs:element name="SchemeCode" nillable="true" type="xs:string" />
+          <xs:element name="ValueCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Classification" nillable="true" type="tns:Classification" />
+  <xs:complexType name="AbstractDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionOnEntity" type="tns:ActionOnEntity">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:date">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:date">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AbstractDto" nillable="true" type="tns:AbstractDto" />
+  <xs:simpleType name="ActionOnEntity">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Update" />
+      <xs:enumeration value="Delete" />
+      <xs:enumeration value="Add" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ActionOnEntity" nillable="true" type="tns:ActionOnEntity" />
+  <xs:complexType name="ArrayOfNrtCompletion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NrtCompletion" nillable="true" type="tns:NrtCompletion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNrtCompletion" nillable="true" type="tns:ArrayOfNrtCompletion" />
+  <xs:complexType name="NrtCompletion">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractDto">
+        <xs:sequence>
+          <xs:element name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsMandatory" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NrtCompletion" nillable="true" type="tns:NrtCompletion" />
+  <xs:complexType name="ArrayOfContact">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Contact" nillable="true" type="tns:Contact" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContact" nillable="true" type="tns:ArrayOfContact" />
+  <xs:complexType name="Contact">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GroupName" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="OrganisationName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostalAddress" nillable="true" type="tns:Address" />
+          <xs:element minOccurs="0" name="RoleCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="TypeCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Contact" nillable="true" type="tns:Contact" />
+  <xs:complexType name="Address">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Line1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Line2" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Postcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateOverseas" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Suburb" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Address" nillable="true" type="tns:Address" />
+  <xs:complexType name="ArrayOfNrtCurrencyPeriod">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NrtCurrencyPeriod" nillable="true" type="tns:NrtCurrencyPeriod" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNrtCurrencyPeriod" nillable="true" type="tns:ArrayOfNrtCurrencyPeriod" />
+  <xs:complexType name="NrtCurrencyPeriod">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Authority" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EndComment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EndReasonCode" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NrtCurrencyPeriod" nillable="true" type="tns:NrtCurrencyPeriod" />
+  <xs:complexType name="ArrayOfDataManagerAssignment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataManagerAssignment" nillable="true" type="tns:DataManagerAssignment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataManagerAssignment" nillable="true" type="tns:ArrayOfDataManagerAssignment" />
+  <xs:complexType name="DataManagerAssignment">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DataManagerAssignment" nillable="true" type="tns:DataManagerAssignment" />
+  <xs:complexType name="ArrayOfTrainingComponentIndustrySector">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrainingComponentIndustrySector" nillable="true" type="tns:TrainingComponentIndustrySector" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrainingComponentIndustrySector" nillable="true" type="tns:ArrayOfTrainingComponentIndustrySector" />
+  <xs:complexType name="TrainingComponentIndustrySector">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingComponentIndustrySector" nillable="true" type="tns:TrainingComponentIndustrySector" />
+  <xs:complexType name="ArrayOfMapping">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Mapping" nillable="true" type="tns:Mapping" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMapping" nillable="true" type="tns:ArrayOfMapping" />
+  <xs:complexType name="Mapping">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsEquivalent" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MapsToCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MapsToTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Mapping" nillable="true" type="tns:Mapping" />
+  <xs:complexType name="ArrayOfTrainingComponentOccupation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrainingComponentOccupation" nillable="true" type="tns:TrainingComponentOccupation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrainingComponentOccupation" nillable="true" type="tns:ArrayOfTrainingComponentOccupation" />
+  <xs:complexType name="TrainingComponentOccupation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingComponentOccupation" nillable="true" type="tns:TrainingComponentOccupation" />
+  <xs:complexType name="ArrayOfRecognitionManagerAssignment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RecognitionManagerAssignment" nillable="true" type="tns:RecognitionManagerAssignment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRecognitionManagerAssignment" nillable="true" type="tns:ArrayOfRecognitionManagerAssignment" />
+  <xs:complexType name="RecognitionManagerAssignment">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RecognitionManagerAssignment" nillable="true" type="tns:RecognitionManagerAssignment" />
+  <xs:complexType name="ArrayOfRelease">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Release" nillable="true" type="tns:Release" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRelease" nillable="true" type="tns:ArrayOfRelease" />
+  <xs:complexType name="Release">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApprovalProcess" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CompanionVolumeLinks" nillable="true" type="tns:ArrayOfReleaseCompanionVolumeLink">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Components" nillable="true" type="tns:ArrayOfReleaseComponent">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Files" nillable="true" type="tns:ArrayOfReleaseFile">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="IscApprovalDate" nillable="true" type="xs:date">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="MinisterialAgreementDate" nillable="true" type="xs:date">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="NqcEndorsementDate" nillable="true" type="xs:date">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ReleaseDate" type="xs:date" />
+      <xs:element minOccurs="0" name="ReleaseNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitGrid" nillable="true" type="tns:ArrayOfUnitGridEntry">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Release" nillable="true" type="tns:Release" />
+  <xs:complexType name="ArrayOfReleaseCompanionVolumeLink">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ReleaseCompanionVolumeLink" nillable="true" type="tns:ReleaseCompanionVolumeLink" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfReleaseCompanionVolumeLink" nillable="true" type="tns:ArrayOfReleaseCompanionVolumeLink" />
+  <xs:complexType name="ReleaseCompanionVolumeLink">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LinkNotes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LinkText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LinkUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PublishedComponentType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReleaseCompanionVolumeLink" nillable="true" type="tns:ReleaseCompanionVolumeLink" />
+  <xs:complexType name="ArrayOfReleaseComponent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ReleaseComponent" nillable="true" type="tns:ReleaseComponent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfReleaseComponent" nillable="true" type="tns:ArrayOfReleaseComponent" />
+  <xs:complexType name="ReleaseComponent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReleaseCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReleaseDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReleaseNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element xmlns:q5="http://training.gov.au/services/" minOccurs="0" name="Type" type="q5:TrainingComponentTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReleaseComponent" nillable="true" type="tns:ReleaseComponent" />
+  <xs:complexType name="ArrayOfReleaseFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ReleaseFile" nillable="true" type="tns:ReleaseFile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfReleaseFile" nillable="true" type="tns:ArrayOfReleaseFile" />
+  <xs:complexType name="ReleaseFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RelativePath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Size" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReleaseFile" nillable="true" type="tns:ReleaseFile" />
+  <xs:complexType name="ArrayOfUnitGridEntry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UnitGridEntry" nillable="true" type="tns:UnitGridEntry" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUnitGridEntry" nillable="true" type="tns:ArrayOfUnitGridEntry" />
+  <xs:complexType name="UnitGridEntry">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsEssential" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UnitGridEntry" nillable="true" type="tns:UnitGridEntry" />
+  <xs:complexType name="ArrayOfNrtRestriction">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NrtRestriction" nillable="true" type="tns:NrtRestriction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNrtRestriction" nillable="true" type="tns:ArrayOfNrtRestriction" />
+  <xs:complexType name="NrtRestriction">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractDto">
+        <xs:sequence>
+          <xs:element name="Restriction" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NrtRestriction" nillable="true" type="tns:NrtRestriction" />
+  <xs:complexType name="UploadAttachmentRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FileExtension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PdfAttachment" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="WordAttachment" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UploadAttachmentRequest" nillable="true" type="tns:UploadAttachmentRequest" />
+  <xs:complexType name="ArrayOfUsageRecommendation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UsageRecommendation" nillable="true" type="tns:UsageRecommendation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsageRecommendation" nillable="true" type="tns:ArrayOfUsageRecommendation" />
+  <xs:complexType name="UsageRecommendation">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractDto">
+        <xs:sequence>
+          <xs:element name="State" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UsageRecommendation" nillable="true" type="tns:UsageRecommendation" />
+  <xs:element name="GetDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="tns:TrainingComponentDetailsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="TrainingComponentDetailsRequest">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IncludeLegacyData" type="xs:boolean" />
+      <xs:element minOccurs="0" name="InformationRequest" nillable="true" type="tns:TrainingComponentInformationRequested" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingComponentDetailsRequest" nillable="true" type="tns:TrainingComponentDetailsRequest" />
+  <xs:complexType name="TrainingComponentInformationRequested">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ShowAttachments" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowClassifications" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowCompanionVolumeLinks" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowCompletionMapping" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowComponents" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowContacts" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowCurrencyPeriods" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowDataManagers" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowFiles" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowIndustrySectors" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowMappingInformation" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowOccupations" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowRecognitionManagers" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowReleases" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowUnitGrid" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowUsageRecommendation" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingComponentInformationRequested" nillable="true" type="tns:TrainingComponentInformationRequested" />
+  <xs:element name="GetDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDetailsResult" nillable="true" type="tns:TrainingComponent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ValidationFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfValidationError" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ValidationFault" nillable="true" type="tns:ValidationFault" />
+  <xs:complexType name="ArrayOfValidationError">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ValidationError" nillable="true" type="tns:ValidationError" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfValidationError" nillable="true" type="tns:ArrayOfValidationError" />
+  <xs:complexType name="ValidationError">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element xmlns:q6="http://training.gov.au/services/" minOccurs="0" name="Severity" type="q6:ValidationErrorSeverity" />
+      <xs:element minOccurs="0" name="SubCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidationTarget" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Context" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ValidationError" nillable="true" type="tns:ValidationError" />
+  <xs:element name="GetServerTime">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServerTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetServerTimeResult" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValidationCodes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValidationCodesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetValidationCodesResult" nillable="true" type="tns:ArrayOfValidationCode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfValidationCode">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ValidationCode" nillable="true" type="tns:ValidationCode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfValidationCode" nillable="true" type="tns:ArrayOfValidationCode" />
+  <xs:complexType name="ValidationCode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ValidationCode" nillable="true" type="tns:ValidationCode" />
+  <xs:element name="Search">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="tns:TrainingComponentSearchRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="TrainingComponentSearchRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractPageRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClassificationFilters" nillable="true" type="tns:ClassificationFilters" />
+          <xs:element name="Filter" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IncludeDeleted" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IncludeLegacyData" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IncludeSuperseded" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ReturnTaxonomyData" type="xs:boolean" />
+          <xs:element minOccurs="0" name="SearchCode" type="xs:boolean" />
+          <xs:element minOccurs="0" name="SearchTitle" type="xs:boolean" />
+          <xs:element minOccurs="0" name="TaxonomyIndustrySectorFilter" nillable="true" type="tns:ArrayOfTaxonomyIndustrySectorFilter" />
+          <xs:element minOccurs="0" name="TaxonomyOccupationFilter" nillable="true" type="tns:ArrayOfTaxonomyOccupationFilter" />
+          <xs:element minOccurs="0" name="TrainingComponentTypes" nillable="true" type="tns:TrainingComponentTypeFilter" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TrainingComponentSearchRequest" nillable="true" type="tns:TrainingComponentSearchRequest" />
+  <xs:complexType name="AbstractPageRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PageNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AbstractPageRequest" nillable="true" type="tns:AbstractPageRequest" />
+  <xs:complexType name="OrganisationScopeSearchRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractPageRequest">
+        <xs:sequence>
+          <xs:element name="Filter" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IncludeImplicitScope" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IncludeLegacyData" type="xs:boolean" />
+          <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="RegistrationManagers" nillable="true" type="q7:ArrayOfstring" />
+          <xs:element minOccurs="0" name="SearchTrainingPackageContents" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OrganisationScopeSearchRequest" nillable="true" type="tns:OrganisationScopeSearchRequest" />
+  <xs:complexType name="OrganisationNameSearchRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractPageRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClassificationFilters" nillable="true" type="tns:ClassificationFilters" />
+          <xs:element minOccurs="0" name="CurrentNamesOnly" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ExcludeNotRtos" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ExcludeRtoWithoutActiveRegistration" type="xs:boolean" />
+          <xs:element name="Filter" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IncludeCode" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IncludeLegacyData" type="xs:boolean" />
+          <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="RegistrationManagers" nillable="true" type="q8:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OrganisationNameSearchRequest" nillable="true" type="tns:OrganisationNameSearchRequest" />
+  <xs:complexType name="ClassificationFilters">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClassificationFilter">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Scheme" nillable="true" type="xs:string" />
+            <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Values" nillable="true" type="q9:ArrayOfstring" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClassificationFilters" nillable="true" type="tns:ClassificationFilters" />
+  <xs:complexType name="TrainingComponentModifiedSearchRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractPageRequest">
+        <xs:sequence>
+          <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DataManagerFilter" nillable="true" type="q10:ArrayOfstring" />
+          <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="EndDate" nillable="true" type="q11:DateTimeOffset" />
+          <xs:element minOccurs="0" name="IncludeLegacyData" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ReturnTaxonomyData" type="xs:boolean" />
+          <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="StartDate" nillable="true" type="q12:DateTimeOffset" />
+          <xs:element minOccurs="0" name="TrainingComponentTypes" nillable="true" type="tns:TrainingComponentTypeFilter" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TrainingComponentModifiedSearchRequest" nillable="true" type="tns:TrainingComponentModifiedSearchRequest" />
+  <xs:complexType name="TrainingComponentTypeFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IncludeAccreditedCourse" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IncludeAccreditedCourseModule" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IncludeQualification" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IncludeSkillSet" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IncludeTrainingPackage" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IncludeUnit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IncludeUnitContextualisation" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingComponentTypeFilter" nillable="true" type="tns:TrainingComponentTypeFilter" />
+  <xs:complexType name="ArrayOfTaxonomyIndustrySectorFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaxonomyIndustrySectorFilter" nillable="true" type="tns:TaxonomyIndustrySectorFilter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaxonomyIndustrySectorFilter" nillable="true" type="tns:ArrayOfTaxonomyIndustrySectorFilter" />
+  <xs:complexType name="TaxonomyIndustrySectorFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IncludeChildren" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaxonomyIndustrySectorFilter" nillable="true" type="tns:TaxonomyIndustrySectorFilter" />
+  <xs:complexType name="ArrayOfTaxonomyOccupationFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaxonomyOccupationFilter" nillable="true" type="tns:TaxonomyOccupationFilter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaxonomyOccupationFilter" nillable="true" type="tns:ArrayOfTaxonomyOccupationFilter" />
+  <xs:complexType name="TaxonomyOccupationFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaxonomyOccupationFilter" nillable="true" type="tns:TaxonomyOccupationFilter" />
+  <xs:element name="SearchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchResult" nillable="true" type="tns:TrainingComponentSearchResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="TrainingComponentSearchResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SearchResult">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TrainingComponentSearchResult" nillable="true" type="tns:TrainingComponentSearchResult" />
+  <xs:complexType name="SearchResult">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="SearchResult" Namespace="http://training.gov.au/services/3/" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="TrainingComponentSummary" Namespace="http://training.gov.au/services/3/" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Count" type="xs:int" />
+      <xs:element minOccurs="0" name="PageNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+      <xs:element minOccurs="0" name="Results" nillable="true" type="tns:ArrayOfTrainingComponentSummary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchResult" nillable="true" type="tns:SearchResult" />
+  <xs:complexType name="ArrayOfTrainingComponentSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrainingComponentSummary" nillable="true" type="tns:TrainingComponentSummary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrainingComponentSummary" nillable="true" type="tns:ArrayOfTrainingComponentSummary" />
+  <xs:complexType name="TrainingComponentSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q13="http://training.gov.au/services/" minOccurs="0" name="ComponentType" type="q13:TrainingComponentTypes" />
+      <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" type="q14:DateTimeOffset">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CurrencyStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IndustrySectors" nillable="true" type="tns:ArrayOfTrainingComponentIndustrySector">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="IsConfidential" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="IsCurrent" nillable="true" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="IsLegacyData" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsStreamlined" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Occupations" nillable="true" type="tns:ArrayOfTrainingComponentOccupation">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="UpdatedDate" type="q15:DateTimeOffset">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Deewr.Tga.Model" minOccurs="0" name="UsageReccomendation" type="q16:UsageRecommendationState">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingComponentSummary" nillable="true" type="tns:TrainingComponentSummary" />
+  <xs:element name="SearchByModifiedDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="tns:TrainingComponentModifiedSearchRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchByModifiedDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchByModifiedDateResult" nillable="true" type="tns:TrainingComponentSearchResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Add">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="tns:TrainingComponent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="tns:TrainingComponentUpdateRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="TrainingComponentUpdateRequest">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompletionMappingList" nillable="true" type="tns:CompletionMappingList" />
+      <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Deewr.Tga.Model" minOccurs="0" name="CopyrightType" nillable="true" type="q17:CopyrightType" />
+      <xs:element minOccurs="0" name="CurrencyPeriodList" nillable="true" type="tns:CurrencyPeriodList" />
+      <xs:element minOccurs="0" name="IsLegacyData" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsStreamlined" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MappingInformationList" nillable="true" type="tns:MappingInformationList" />
+      <xs:element minOccurs="0" name="RestrictionList" nillable="true" type="tns:NrtRestrictionList" />
+      <xs:element minOccurs="0" name="ReverseMappingInformationList" nillable="true" type="tns:ReverseMappingInformationList" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrainingComponentClassificationList" nillable="true" type="tns:TrainingComponentClassificationList" />
+      <xs:element minOccurs="0" name="TrainingComponentContactList" nillable="true" type="tns:TrainingComponentContactList" />
+      <xs:element minOccurs="0" name="Uploadings" nillable="true" type="tns:UploadAttachmentRequest">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingComponentUpdateRequest" nillable="true" type="tns:TrainingComponentUpdateRequest" />
+  <xs:complexType name="CompletionMappingList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenericListPropertyOfNrtCompletionNrtCompletionzFTBwiV_P">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CompletionMappingList" nillable="true" type="tns:CompletionMappingList" />
+  <xs:complexType name="GenericListPropertyOfNrtCompletionNrtCompletionzFTBwiV_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="GenericListPropertyOf{0}{1}{#}" Namespace="http://training.gov.au/services/3/" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="NrtCompletion" Namespace="http://training.gov.au/services/3/" />
+          <GenericParameter Name="NrtCompletion" Namespace="http://schemas.datacontract.org/2004/07/Deewr.Tga.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ActionOnCollection" type="tns:ActionOnCollection" />
+      <xs:element name="List" nillable="true" type="tns:ArrayOfNrtCompletion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenericListPropertyOfNrtCompletionNrtCompletionzFTBwiV_P" nillable="true" type="tns:GenericListPropertyOfNrtCompletionNrtCompletionzFTBwiV_P" />
+  <xs:simpleType name="ActionOnCollection">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Current" />
+      <xs:enumeration value="Replace" />
+      <xs:enumeration value="Granular" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ActionOnCollection" nillable="true" type="tns:ActionOnCollection" />
+  <xs:complexType name="CurrencyPeriodList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenericListPropertyOfNrtCurrencyPeriodNrtCurrencyPeriodzFTBwiV_P">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CurrencyPeriodList" nillable="true" type="tns:CurrencyPeriodList" />
+  <xs:complexType name="GenericListPropertyOfNrtCurrencyPeriodNrtCurrencyPeriodzFTBwiV_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="GenericListPropertyOf{0}{1}{#}" Namespace="http://training.gov.au/services/3/" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="NrtCurrencyPeriod" Namespace="http://training.gov.au/services/3/" />
+          <GenericParameter Name="NrtCurrencyPeriod" Namespace="http://schemas.datacontract.org/2004/07/Deewr.Tga.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ActionOnCollection" type="tns:ActionOnCollection" />
+      <xs:element name="List" nillable="true" type="tns:ArrayOfNrtCurrencyPeriod" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenericListPropertyOfNrtCurrencyPeriodNrtCurrencyPeriodzFTBwiV_P" nillable="true" type="tns:GenericListPropertyOfNrtCurrencyPeriodNrtCurrencyPeriodzFTBwiV_P" />
+  <xs:complexType name="MappingInformationList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenericTimeInvariantListPropertyOfMappingTrainingComponentMappingzFTBwiV_P">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MappingInformationList" nillable="true" type="tns:MappingInformationList" />
+  <xs:complexType name="GenericTimeInvariantListPropertyOfMappingTrainingComponentMappingzFTBwiV_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="GenericTimeInvariantListPropertyOf{0}{1}{#}" Namespace="http://training.gov.au/services/3/" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Mapping" Namespace="http://training.gov.au/services/3/" />
+          <GenericParameter Name="TrainingComponentMapping" Namespace="http://schemas.datacontract.org/2004/07/Deewr.Tga.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ActionOnCollection" type="tns:ActionOnTimeInvariantCollection" />
+      <xs:element name="List" nillable="true" type="tns:ArrayOfMapping" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenericTimeInvariantListPropertyOfMappingTrainingComponentMappingzFTBwiV_P" nillable="true" type="tns:GenericTimeInvariantListPropertyOfMappingTrainingComponentMappingzFTBwiV_P" />
+  <xs:simpleType name="ActionOnTimeInvariantCollection">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Merge" />
+      <xs:enumeration value="Replace" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ActionOnTimeInvariantCollection" nillable="true" type="tns:ActionOnTimeInvariantCollection" />
+  <xs:complexType name="NrtRestrictionList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenericListPropertyOfNrtRestrictionNrtRestrictionzFTBwiV_P">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NrtRestrictionList" nillable="true" type="tns:NrtRestrictionList" />
+  <xs:complexType name="GenericListPropertyOfNrtRestrictionNrtRestrictionzFTBwiV_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="GenericListPropertyOf{0}{1}{#}" Namespace="http://training.gov.au/services/3/" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="NrtRestriction" Namespace="http://training.gov.au/services/3/" />
+          <GenericParameter Name="NrtRestriction" Namespace="http://schemas.datacontract.org/2004/07/Deewr.Tga.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ActionOnCollection" type="tns:ActionOnCollection" />
+      <xs:element name="List" nillable="true" type="tns:ArrayOfNrtRestriction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenericListPropertyOfNrtRestrictionNrtRestrictionzFTBwiV_P" nillable="true" type="tns:GenericListPropertyOfNrtRestrictionNrtRestrictionzFTBwiV_P" />
+  <xs:complexType name="ReverseMappingInformationList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenericTimeInvariantListPropertyOfMappingTrainingReverseComponentMappingzFTBwiV_P">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ReverseMappingInformationList" nillable="true" type="tns:ReverseMappingInformationList" />
+  <xs:complexType name="GenericTimeInvariantListPropertyOfMappingTrainingReverseComponentMappingzFTBwiV_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="GenericTimeInvariantListPropertyOf{0}{1}{#}" Namespace="http://training.gov.au/services/3/" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Mapping" Namespace="http://training.gov.au/services/3/" />
+          <GenericParameter Name="TrainingReverseComponentMapping" Namespace="http://schemas.datacontract.org/2004/07/Deewr.Tga.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ActionOnCollection" type="tns:ActionOnTimeInvariantCollection" />
+      <xs:element name="List" nillable="true" type="tns:ArrayOfMapping" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenericTimeInvariantListPropertyOfMappingTrainingReverseComponentMappingzFTBwiV_P" nillable="true" type="tns:GenericTimeInvariantListPropertyOfMappingTrainingReverseComponentMappingzFTBwiV_P" />
+  <xs:complexType name="TrainingComponentClassificationList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenericListPropertyOfClassificationNrtClassificationzFTBwiV_P">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TrainingComponentClassificationList" nillable="true" type="tns:TrainingComponentClassificationList" />
+  <xs:complexType name="GenericListPropertyOfClassificationNrtClassificationzFTBwiV_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="GenericListPropertyOf{0}{1}{#}" Namespace="http://training.gov.au/services/3/" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Classification" Namespace="http://training.gov.au/services/3/" />
+          <GenericParameter Name="NrtClassification" Namespace="http://schemas.datacontract.org/2004/07/Deewr.Tga.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ActionOnCollection" type="tns:ActionOnCollection" />
+      <xs:element name="List" nillable="true" type="tns:ArrayOfClassification" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenericListPropertyOfClassificationNrtClassificationzFTBwiV_P" nillable="true" type="tns:GenericListPropertyOfClassificationNrtClassificationzFTBwiV_P" />
+  <xs:complexType name="TrainingComponentContactList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenericListPropertyOfContactTrainingComponentContactzFTBwiV_P">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TrainingComponentContactList" nillable="true" type="tns:TrainingComponentContactList" />
+  <xs:complexType name="GenericListPropertyOfContactTrainingComponentContactzFTBwiV_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="GenericListPropertyOf{0}{1}{#}" Namespace="http://training.gov.au/services/3/" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Contact" Namespace="http://training.gov.au/services/3/" />
+          <GenericParameter Name="TrainingComponentContact" Namespace="http://schemas.datacontract.org/2004/07/Deewr.Tga.Model" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ActionOnCollection" type="tns:ActionOnCollection" />
+      <xs:element name="List" nillable="true" type="tns:ArrayOfContact" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenericListPropertyOfContactTrainingComponentContactzFTBwiV_P" nillable="true" type="tns:GenericListPropertyOfContactTrainingComponentContactzFTBwiV_P" />
+  <xs:element name="UpdateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchDeletedByDeletedDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="tns:DeletedSearchRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="DeletedSearchRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractPageRequest">
+        <xs:sequence>
+          <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="EndDate" nillable="true" type="q18:DateTimeOffset" />
+          <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="StartDate" nillable="true" type="q19:DateTimeOffset" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeletedSearchRequest" nillable="true" type="tns:DeletedSearchRequest" />
+  <xs:element name="SearchDeletedByDeletedDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchDeletedByDeletedDateResult" nillable="true" type="tns:ArrayOfDeletedTrainingComponent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfDeletedTrainingComponent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DeletedTrainingComponent" nillable="true" type="tns:DeletedTrainingComponent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDeletedTrainingComponent" nillable="true" type="tns:ArrayOfDeletedTrainingComponent" />
+  <xs:complexType name="DeletedTrainingComponent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NationalCode" nillable="true" type="xs:string" />
+      <xs:element xmlns:q20="http://training.gov.au/services/" minOccurs="0" name="Operation" type="q20:DeleteOperation" />
+      <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="UpdatedDate" type="q21:DateTimeOffset" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeletedTrainingComponent" nillable="true" type="tns:DeletedTrainingComponent" />
+  <xs:element name="Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="tns:TrainingComponentDeleteRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="TrainingComponentDeleteRequest">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingComponentDeleteRequest" nillable="true" type="tns:TrainingComponentDeleteRequest" />
+  <xs:element name="DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransferDataManager">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="tns:TrainingComponentTransferDataManagerRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="TrainingComponentTransferDataManagerRequest">
+    <xs:sequence>
+      <xs:element name="DataManagerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EffectiveDate" nillable="true" type="xs:date">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="RecognitionManagerCode" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="TrainingComponentCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingComponentTransferDataManagerRequest" nillable="true" type="tns:TrainingComponentTransferDataManagerRequest" />
+  <xs:element name="TransferDataManagerResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLookup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="tns:LookupRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="LookupRequest">
+    <xs:sequence>
+      <xs:element name="LookupName" type="tns:LookupName" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LookupRequest" nillable="true" type="tns:LookupRequest" />
+  <xs:simpleType name="LookupName">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Country" />
+      <xs:enumeration value="ContactType" />
+      <xs:enumeration value="RegistrationEndReason" />
+      <xs:enumeration value="ScopeExtent" />
+      <xs:enumeration value="TrainingComponentReleaseCurrency" />
+      <xs:enumeration value="TrainingComponentUsageRecommendation" />
+      <xs:enumeration value="TrainingComponentType" />
+      <xs:enumeration value="ClassificationPurpose" />
+      <xs:enumeration value="ScopeDecision" />
+      <xs:enumeration value="RestrictionTypeCode" />
+      <xs:enumeration value="TrainingComponentEndReason" />
+      <xs:enumeration value="Occupation" />
+      <xs:enumeration value="IndustrySector" />
+      <xs:enumeration value="CopyrightType" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LookupName" nillable="true" type="tns:LookupName" />
+  <xs:element name="GetLookupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLookupResult" nillable="true" type="tns:ArrayOfLookup" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfLookup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Lookup" nillable="true" type="tns:Lookup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLookup" nillable="true" type="tns:ArrayOfLookup" />
+  <xs:complexType name="Lookup">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Lookup" nillable="true" type="tns:Lookup" />
+  <xs:element name="GetTaxonomyOccupation">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTaxonomyOccupationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTaxonomyOccupationResult" nillable="true" type="tns:ArrayOfTrainingComponentOccupation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTaxonomyIndustrySector">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTaxonomyIndustrySectorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTaxonomyIndustrySectorResult" nillable="true" type="tns:ArrayOfTrainingComponentIndustrySector" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressStates">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressStatesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAddressStatesResult" nillable="true" type="tns:ArrayOfAddressStates" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfAddressStates">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AddressStates" nillable="true" type="tns:AddressStates" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAddressStates" nillable="true" type="tns:ArrayOfAddressStates" />
+  <xs:complexType name="AddressStates">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Abbreviation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddressStates" nillable="true" type="tns:AddressStates" />
+  <xs:element name="GetContactRoles">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactRolesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetContactRolesResult" nillable="true" type="tns:ArrayOfTrainingComponentContactRole" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfTrainingComponentContactRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrainingComponentContactRole" nillable="true" type="tns:TrainingComponentContactRole" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrainingComponentContactRole" nillable="true" type="tns:ArrayOfTrainingComponentContactRole" />
+  <xs:complexType name="TrainingComponentContactRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AllowGroupContact" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AllowIndividualContact" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AllowMultipleCurrent" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AllowOrganisationContact" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsImplicit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="RequireContactDetails" type="xs:boolean" />
+      <xs:element xmlns:q22="http://training.gov.au/services/" minOccurs="0" name="RequiredTrainingComponentTypes" type="q22:TrainingComponentTypes" />
+      <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingComponentContactRole" nillable="true" type="tns:TrainingComponentContactRole" />
+  <xs:element name="GetDataManagers">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataManagersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataManagersResult" nillable="true" type="tns:ArrayOfDataManager" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfDataManager">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataManager" nillable="true" type="tns:DataManager" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataManager" nillable="true" type="tns:ArrayOfDataManager" />
+  <xs:complexType name="DataManager">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecognitionManagerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegistrationManagerCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataManager" nillable="true" type="tns:DataManager" />
+  <xs:element name="GetRecognitionManagers">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRecognitionManagersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRecognitionManagersResult" nillable="true" type="tns:ArrayOfRecognitionManager" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfRecognitionManager">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RecognitionManager" nillable="true" type="tns:RecognitionManager" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRecognitionManager" nillable="true" type="tns:ArrayOfRecognitionManager" />
+  <xs:complexType name="RecognitionManager">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+      <xs:element name="ShortName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RecognitionManager" nillable="true" type="tns:RecognitionManager" />
+  <xs:element name="GetClassificationSchemes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassificationSchemesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetClassificationSchemesResult" nillable="true" type="tns:ArrayOfNrtClassificationSchemeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfNrtClassificationSchemeResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NrtClassificationSchemeResult" nillable="true" type="tns:NrtClassificationSchemeResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNrtClassificationSchemeResult" nillable="true" type="tns:ArrayOfNrtClassificationSchemeResult" />
+  <xs:complexType name="NrtClassificationSchemeResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AllowMultipleValues" type="xs:boolean" />
+      <xs:element xmlns:q23="http://training.gov.au/services/" minOccurs="0" name="AppliesToComponentTypes" type="q23:TrainingComponentTypes" />
+      <xs:element name="ClassificationValues" nillable="true" type="tns:ArrayOfClassificationValue" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsProtected" type="xs:boolean" />
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q24="http://training.gov.au/services/" minOccurs="0" name="RequiredForComponentTypes" type="q24:TrainingComponentTypes" />
+      <xs:element name="SchemeCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NrtClassificationSchemeResult" nillable="true" type="tns:NrtClassificationSchemeResult" />
+  <xs:complexType name="ArrayOfClassificationValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClassificationValue" nillable="true" type="tns:ClassificationValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClassificationValue" nillable="true" type="tns:ArrayOfClassificationValue" />
+  <xs:complexType name="ClassificationValue">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractDto">
+        <xs:sequence>
+          <xs:element name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DisplayOrder" type="xs:int" />
+          <xs:element name="Name" nillable="true" type="xs:string" />
+          <xs:element name="Value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ClassificationValue" nillable="true" type="tns:ClassificationValue" />
+  <xs:element name="GetClassificationPurposes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassificationPurposesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetClassificationPurposesResult" nillable="true" type="tns:ArrayOfClassificationPurpose" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfClassificationPurpose">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClassificationPurpose" nillable="true" type="tns:ClassificationPurpose" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClassificationPurpose" nillable="true" type="tns:ArrayOfClassificationPurpose" />
+  <xs:complexType name="ClassificationPurpose">
+    <xs:sequence>
+      <xs:element name="Description" nillable="true" type="xs:string" />
+      <xs:element name="PurposeCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClassificationPurpose" nillable="true" type="tns:ClassificationPurpose" />
+</xs:schema>
